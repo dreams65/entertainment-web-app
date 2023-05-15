@@ -1,0 +1,117 @@
+.card {
+    max-width: 280px;
+    width: 100%;
+    list-style: none;
+    margin-top: 32px;
+}
+
+.card__top  {
+    height: 174px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+
+    position: relative;
+}
+
+.card__top:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.card__top:hover .card__btn-play {
+    opacity: 1;
+    transition: .3s;
+}
+
+.card__btn-play,
+.card__btn-bookmark {
+    z-index: 7;
+    position: absolute;
+    cursor: pointer;
+}
+
+.card__btn-play {
+    text-decoration: none;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 117px;
+    height: 48px;
+    color: var(--pureWhite);
+    border-radius: 28.5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 18px;
+    transition: .3s;
+    padding-left: 10px;
+}
+
+.card__btn-play-icon {
+    margin-right: 19px;
+}
+
+.card__btn-bookmark {
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: rgba(16, 20, 30, 0.5);
+    border: none;
+}
+
+.card__btn-bookmark:hover {
+    background-color: var(--pureWhite);
+    transition: .3s;
+}
+
+.card__btn-bookmark:hover .bookmark-icon * {
+    stroke: #000;
+}
+
+.bookmark-icon.active * {
+    fill: #fff;
+    stroke: none;
+}
+
+
+.category::before {
+    content: '•';
+    margin: 0 8px;    
+}
+
+.category::after {
+    content: '•';
+    margin: 0 8px;
+}
+
+.category__icon {
+    margin-right: 6px;
+}
+
+.card__title {
+    margin-top: 5px;
+}
+
+.card__bottom {
+    margin-top: 8px;
+}
+
+
+.card__large {
+    width: 470px;
+    height: 230px;
+}
