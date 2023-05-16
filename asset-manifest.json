@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/entertainment-web-app/static/css/main.b4c78a7d.css",
-    "main.js": "/entertainment-web-app/static/js/main.bc185157.js",
+    "main.js": "/entertainment-web-app/static/js/main.3e6c10de.js",
     "static/media/sad.svg": "/entertainment-web-app/static/media/sad.f2132722142b55c4e90fff92cf0b334a.svg",
     "index.html": "/entertainment-web-app/index.html",
+    "static/media/icon-category-movie.svg": "/entertainment-web-app/static/media/icon-category-movie.6861d0ce9036ac864b87dc5aff6570c3.svg",
     "static/media/icon-nav-bookmark.svg": "/entertainment-web-app/static/media/icon-nav-bookmark.a564501ebcbde752ebe044260a9206b8.svg",
     "static/media/icon-nav-movies.svg": "/entertainment-web-app/static/media/icon-nav-movies.c347442f9a6fd2201f1abf8819aa4ef6.svg",
     "static/media/icon-nav-home.svg": "/entertainment-web-app/static/media/icon-nav-home.8acf660248afc7a27879c9c9bf218722.svg",
     "static/media/icon-search.svg": "/entertainment-web-app/static/media/icon-search.cbc8d670ebd27b023c9868d5850d79c5.svg",
     "static/media/logo.svg": "/entertainment-web-app/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
+    "static/media/icon-category-tv-series.svg": "/entertainment-web-app/static/media/icon-category-tv-series.75c9208553d35303e2f1b61b511ab387.svg",
     "static/media/icon-nav-tv-series.svg": "/entertainment-web-app/static/media/icon-nav-tv-series.c22fe1629b446365f6f7829a014453f8.svg",
     "static/media/icon-play.svg": "/entertainment-web-app/static/media/icon-play.8371f8d28787ad27a68ec37af3a6c7b0.svg",
     "static/media/icon-bookmark-empty.svg": "/entertainment-web-app/static/media/icon-bookmark-empty.20ce7177c045bbdbd7948bd9b4220c58.svg",
     "main.b4c78a7d.css.map": "/entertainment-web-app/static/css/main.b4c78a7d.css.map",
-    "main.bc185157.js.map": "/entertainment-web-app/static/js/main.bc185157.js.map"
+    "main.3e6c10de.js.map": "/entertainment-web-app/static/js/main.3e6c10de.js.map"
   },
   "entrypoints": [
     "static/css/main.b4c78a7d.css",
-    "static/js/main.bc185157.js"
+    "static/js/main.3e6c10de.js"
   ]
 }
