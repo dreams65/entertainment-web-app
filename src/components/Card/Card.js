@@ -6,9 +6,15 @@ import { ReactComponent as BookmarkEmpty } from '../../assets/icon-bookmark-empt
 import { useDispatch } from 'react-redux';
 import { addBookmark } from './../../redux/slices/bookmarkedSlice';
 import { showFilmPage } from '../../redux/slices/playerSlice';
-
+import iconMovie from '../../assets/icon-category-movie.svg';
+import iconTV from '../../assets/icon-category-tv-series.svg';
 
 function Card({ title, thumbnail, year, rating, category, id, bookmark }) {
+
+	const icons = {
+		"Movie" : iconMovie,
+		"TV Series" : iconTV
+	}
 
 	const dispatch = useDispatch()
 
@@ -46,7 +52,7 @@ function Card({ title, thumbnail, year, rating, category, id, bookmark }) {
 				<div className='card__information'>
 					<span className='year'>{year}</span>
 					<span className='category'>
-						<img className='category__icon' src={`./../assets/icon-category-${(category).toLowerCase().replace(/ /g, '-')}.svg`} alt="category-icon" />
+						<img className='category__icon' src={icons[category]} alt="category-icon" />
 						{category}
 					</span>
 					<span className='rating'>{rating}</span>

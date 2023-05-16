@@ -7,8 +7,15 @@ import playIcon from '../../assets/icon-play.svg';
 import { useDispatch } from 'react-redux';
 import { addBookmark } from './../../redux/slices/bookmarkedSlice';
 import { showFilmPage } from '../../redux/slices/playerSlice';
+import iconMovie from '../../assets/icon-category-movie.svg';
+import iconTV from '../../assets/icon-category-tv-series.svg';
 
 function TrandingCard({title, thumbnail, year, category, rating, bookmark, id}) {
+
+	const icons = {
+		"Movie" : iconMovie,
+		"TV Series" : iconTV
+	}
 
     const dispatch = useDispatch();
 
@@ -37,7 +44,7 @@ function TrandingCard({title, thumbnail, year, category, rating, bookmark, id}) 
                 <div className="card-info__wrapper">
                     <span className="year body-m">{year}</span>
                     <span className="category body-m">
-                        <img className="category_icon" src={`./../assets/icon-category-${(category).toLowerCase().replace(/ /g, '-')}.svg`} alt="icon" />
+                        <img className="category_icon" src={icons[category]} alt="icon" />
                         {category}
                     </span>
                     <span className="rating body-m">{rating}</span>
